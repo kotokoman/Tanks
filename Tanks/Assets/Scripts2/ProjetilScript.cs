@@ -21,11 +21,9 @@ public class ProjetilScript : MonoBehaviour
     //Detectar uma colisão
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Nome do objeto: " + other.gameObject.name);
-        
         if(other.gameObject.tag == "Enemy")
         {
-            
+
             other.gameObject.SetActive(false);
             Destroy(gameObject);
            
