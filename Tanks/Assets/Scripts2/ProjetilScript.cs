@@ -7,6 +7,8 @@ public class ProjetilScript : MonoBehaviour
     public float timeLimit;
     private float timer = 0;
 
+   
+
     private void Update()
     {
         timer += Time.deltaTime;       

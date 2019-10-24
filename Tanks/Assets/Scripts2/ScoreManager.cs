@@ -21,7 +21,12 @@ public class ScoreManager : MonoBehaviour
 
             UpdatePointsText();
         }
-    }  
+    }
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 
     void UpdatePointsText()
     {

@@ -5,6 +5,13 @@ public class MudaScene : MonoBehaviour
 {
     bool gameEnded = false;
 
+    [SerializeField] private ScoreManager scoreManager;
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += AcessarScore;
+    }
+
     public void EndGame()
     {
         if(gameEnded == false)
@@ -19,5 +26,15 @@ public class MudaScene : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene("Gameplay");
+    }
+
+    void AcessarScore(Scene scene, LoadSceneMode mode)
+    {
+        scoreManager = GameObject.Find("Score").GetComponent<ScoreManager>();
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= AcessarScore;
     }
 }
