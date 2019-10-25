@@ -7,7 +7,7 @@ public class EnemyAI : MonoBehaviour
     public float rotSpd;               //variavel para definir a velocidade de rotação do inimigo
     public float movSpd;               //variavel para definir a velocidade de movimento do inimigo
 
-   void Start()
+    void Start()
     {
         trPlayer = GameObject.FindGameObjectWithTag("Player").transform; //armazenando a posição do player
     }

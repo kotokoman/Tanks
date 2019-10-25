@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour
     private Text scoreText;   //variavel para armazenar o texto a receber o update de pontos
 
     private int points = 0;   //variavel contadora de pontos
+    
     public int Points   //getset da variavel para somar pelo valor recebido em 'value' e chamar a função de update
     {
         get
