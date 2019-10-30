@@ -26,7 +26,7 @@ public class ScoreManager : MonoBehaviour
 
     void Awake()
     {
-        scoreText = GameObject.Find("Points").GetComponent<Text>();    //definir o componente da variavel de texto
+        scoreText = GameObject.Find("Points").    //definir o componente da variavel de texto
     }
 
     void UpdatePointsText()

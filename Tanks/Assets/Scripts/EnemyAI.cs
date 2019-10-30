@@ -14,8 +14,8 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(trPlayer.position - transform.position), rotSpd * Time.deltaTime); //rotacionando o inimigo para ficar sempre olhando para o player
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(trPlayer.position - transform.position), rotSpd * Time.deltaTime);
 
-        transform.position += transform.forward * movSpd * Time.deltaTime; //movendo o inimigo para a frente (seguindo o player)
+        transform.position += transform.forward * movSpd * Time.deltaTime;
     }
 }
